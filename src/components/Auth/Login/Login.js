@@ -13,26 +13,16 @@ function Login() {
     const userLogin = async (e)=>{
       console.log("hi");
       e.preventDefault();
-        // axios({
-        //       method:'post',
-        //       data:details,
-        //       url:`${base_backend_url}/auth/login`,
-        //       withCredentials:true,
-        //       headers: {
-        //         "Content-Type": "application/json"
-        //         },
-        //     })
-        fetch(`${base_backend_url}/auth/login`, {
-          method: 'POST',
-          headers: {
-            Accept: 'application/json',
-            'Content-Type': 'application/json',
-            // Authorization: `Bearer ${token}`,
-             credentials:'include' 
-          },
-          body: JSON.stringify(details),
-        })
-             .then((res)=>{
+        axios({
+              method:'post',
+              data:details,
+              url:`${base_backend_url}/auth/login`,
+              withCredentials:true,
+              headers: {
+                "Content-Type": "application/json"
+                },
+            })
+            .then((res)=>{
                 if(res.status===200){
                     navigate('/home');
                 }
