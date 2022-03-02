@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+.subSyllabus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+    color: azure;
+}
+::placeholder {
+    text-transform: capitalize;
+}
+.homeHeading{
+    text-decoration: none;
+    color: #1572A1;
+    text-transform: uppercase;
+}
+.subSyllabusHomeDiv{
+    display: flex;
+    flex-direction: row;
+
+}
+.subSyllabusHomeIcon{
+    font-size:30px;
+    color:#1572A1;
+    margin-top:27px;
+    margin-right: 10px;
+ 
+}
+.subSyllabusOuterDiv{
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #1572A1;
+    border-radius: 10px;
+}
+.subSyllabusButton{
+    letter-spacing: 2px;
+    width: 25%;
+    padding: 12px;
+    border-radius: 3px;
+    text-decoration: none;
+    border:none;
+    margin: 20px;
+    color: #1572A1;
+    background-color: #9AD0EC;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+   
+}
+.subSyllabusHeading{
+    color: azure;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.subSyllabusButtonLink{
+    text-decoration: none;
+    color: #1572A1;
+    text-transform: uppercase;
+}

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+.addSyllabus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+}
+::placeholder {
+    text-transform: capitalize;
+}
+.homeHeading{
+    text-decoration: none;
+    color: #1572A1;
+    text-transform: uppercase;
+}
+.addSyllabusHomeDiv{
+    display: flex;
+    flex-direction: row;
+
+}
+.addSyllabusHomeIcon{
+    font-size:30px;
+    color:#1572A1;
+    margin-top:27px;
+    margin-right: 10px;
+ 
+}
+.addSyllabusOuterDiv{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #1572A1;
+    border-radius: 10px;
+}
+.addSyllabusButton{
+    letter-spacing: 2px;
+    width: 25%;
+    padding: 12px;
+    border-radius: 3px;
+    text-decoration: none;
+    border:none;
+    margin: 20px;
+    color: #1572A1;
+    background-color: #9AD0EC;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+   
+}
+.addSyllabusHeading{
+    color: azure;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.addSyllabusFormDiv{
+    width: 80%;
+    height: 60%;
+}
+
+.addSyllabusFormInput{
+    width: 50%;
+    padding: 15px;
+    margin:8px;
+    outline: none;
+    border:none;
+    border-radius: 4px;
+    color: #1572A1;
+    letter-spacing: 2px;
+}

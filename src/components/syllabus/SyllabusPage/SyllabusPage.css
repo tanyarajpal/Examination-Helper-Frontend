@@ -1,0 +1,65 @@
+/* color:#2E4C6D;
+color: #DADDFC; */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+.syllabusPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+}
+.homeHeading{
+    text-decoration: none;
+    color: #1572A1;
+    text-transform: uppercase;
+}
+.syllabusPageHomeDiv{
+    display: flex;
+    flex-direction: row;
+
+}
+.syllabusPageHomeIcon{
+    font-size:30px;
+    color:#1572A1;
+    margin-top:27px;
+    margin-right: 10px;
+ 
+}
+.syllabusOuterDiv{
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #1572A1;
+    border-radius: 10px;
+}
+.syllabusButton{
+    width: 20%;
+    background-color: azure;
+    padding: 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: #9AD0EC;
+    cursor: pointer;
+   
+}
+.syllabusHeading{
+    color: azure;
+    text-transform: uppercase;
+}
+.syllabusLabel{
+ color: azure;
+ text-transform: uppercase;
+}
+
+.syllabusPageLink{
+    text-decoration: none;
+    color: #1572A1;
+    text-transform: uppercase;
+}
