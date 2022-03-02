@@ -18,6 +18,9 @@ function Login() {
               data:details,
               url:`${base_backend_url}/auth/login`,
               withCredentials:true,
+              headers: {
+                "Content-Type": "application/json"
+                },
             })
              .then((res)=>{
                 if(res.status===200){
@@ -34,6 +37,9 @@ function Login() {
           method:'get',
           url:`${base_backend_url}/auth/login`,
           withCredentials:true, 
+          headers: {
+            "Content-Type": "application/json"
+            },
         }).then((res)=>{
           if(res.status === 200)
           navigate('/home');
