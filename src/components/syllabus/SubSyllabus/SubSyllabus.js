@@ -42,7 +42,7 @@ function SubSyllabus() {
         axios({
           method:"delete",
           url:`${base_backend_url}/syllabus/delete-syllabus/${subId}`,
-          withCredentials:true,
+         // withCredentials:true,
         })
         .then(()=>{
             console.log("item deleted");

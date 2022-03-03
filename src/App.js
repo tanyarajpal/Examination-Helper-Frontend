@@ -20,7 +20,7 @@ function App() {
       method:'get',
       // url:"http://localhost:4000/logout",
       url:`${base_backend_url}/auth/logout`,
-      withCredentials:true,
+      //withCredentials:true,
     }).then((response)=>{
       console.log("user logged out successfully",response);
        navigate('/');

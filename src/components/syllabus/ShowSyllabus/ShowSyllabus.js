@@ -18,7 +18,7 @@ function ShowSyllabus() {
           axios({
             methos:"get",
             url:`${base_backend_url}/syllabus/get-all-syllabus`,
-            withCredentials:true,
+            // withCredentials:true,
           })
           .then(res=>{
                 console.log(res.data);

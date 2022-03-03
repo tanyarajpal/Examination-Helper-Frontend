@@ -22,7 +22,7 @@ function AddSyllabus() {
           method:"post",
           data:details,
           url : `${base_backend_url}/syllabus/create-syllabus`,
-          withCredentials:true,
+        //   withCredentials:true,
         })
           .then((res)=>{
               if(res.status === 200){

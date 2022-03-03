@@ -27,7 +27,7 @@ function EditSyllabus() {
         axios({
             method:"get",
             url:`${base_backend_url}/syllabus/get-one-syllabus/${subId}`,
-            withCredentials:true,
+            //withCredentials:true,
         })
          .then((res)=>{
             console.log("response",res.data)
