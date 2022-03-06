@@ -26,6 +26,7 @@ function Login() {
                 if(res.status===200){
                     navigate('/home');
                 }
+                console.log(res.cookie);
              })
              .catch((err)=>{
                   console.log("error logging in",err);
