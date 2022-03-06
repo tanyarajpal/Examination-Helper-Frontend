@@ -24,6 +24,7 @@ function Login() {
             })
             .then((res)=>{
               console.log(res.cookie);
+              console.log(res);
                 if(res.status===200){
                     navigate('/home');
                 }
