@@ -27,7 +27,11 @@ function SignUp() {
           // url:"http://localhost:4000/register",
           url:`${base_backend_url}/auth/register`,
           data:details,
-          headers: {'X-Requested-With': 'XMLHttpRequest'},
+          // headers: {'X-Requested-With': 'XMLHttpRequest'},
+          headers: {
+            "Content-Type": "application/json",
+            "x-access-token":localStorage.getItem("token")
+            },
         })
         .then((response)=>{
           console.log("frontend data " ,response);

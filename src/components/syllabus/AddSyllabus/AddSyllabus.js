@@ -23,6 +23,10 @@ function AddSyllabus() {
           data:details,
           url : `${base_backend_url}/syllabus/create-syllabus`,
           withCredentials:true,
+          headers: {
+            "Content-Type": "application/json",
+            "x-access-token":localStorage.getItem("token")
+            },
         })
           .then((res)=>{
               if(res.status === 200){

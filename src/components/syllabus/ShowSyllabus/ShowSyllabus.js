@@ -19,6 +19,10 @@ function ShowSyllabus() {
             methos:"get",
             url:`${base_backend_url}/syllabus/get-all-syllabus`,
             withCredentials:true,
+            headers: {
+              "Content-Type": "application/json",
+              "x-access-token":localStorage.getItem("token")
+              },
           })
           .then(res=>{
                 console.log(res.data);

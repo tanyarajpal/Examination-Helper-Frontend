@@ -17,6 +17,10 @@ function SubSyllabus() {
                 method:"get",
                 url:`${base_backend_url}/syllabus/get-one-syllabus/${subId}`,
                 withCredentials:true,
+                headers: {
+                  "Content-Type": "application/json",
+                  "x-access-token":localStorage.getItem("token")
+                  },
             })
               .then((res)=>{
                   console.log(res.data);
@@ -43,6 +47,10 @@ function SubSyllabus() {
           method:"delete",
           url:`${base_backend_url}/syllabus/delete-syllabus/${subId}`,
          withCredentials:true,
+         headers: {
+          "Content-Type": "application/json",
+          "x-access-token":localStorage.getItem("token")
+          },
         })
         .then(()=>{
             console.log("item deleted");

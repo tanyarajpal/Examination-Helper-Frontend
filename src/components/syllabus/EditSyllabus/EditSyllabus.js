@@ -28,6 +28,10 @@ function EditSyllabus() {
             method:"get",
             url:`${base_backend_url}/syllabus/get-one-syllabus/${subId}`,
             withCredentials:true,
+            headers: {
+                "Content-Type": "application/json",
+                "x-access-token":localStorage.getItem("token")
+                },
         })
          .then((res)=>{
             console.log("response",res.data)
@@ -45,6 +49,10 @@ function EditSyllabus() {
               data:updatedData,
               url:`${base_backend_url}/syllabus/update-syllabus/${subId}`,
               withCredentials:true,
+              headers: {
+                "Content-Type": "application/json",
+                "x-access-token":localStorage.getItem("token")
+                },
             })
           .then((res)=>{
               console.log(res);

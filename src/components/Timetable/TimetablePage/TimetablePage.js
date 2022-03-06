@@ -30,6 +30,10 @@ function TimetablePage() {
             data: data,
             url: `${base_backend_url}/timetable/get-timetable`,
             withCredentials:true,
+            headers: {
+              "Content-Type": "application/json",
+              "x-access-token":localStorage.getItem("token")
+              },
           })
           .then((response)=>{
                 // console.log(response.data.data);
@@ -47,6 +51,10 @@ function TimetablePage() {
          method:"delete",
          url:`${base_backend_url}/timetable/delete-timetable/${outerId}/${id}`,
          withCredentials:true,
+         headers: {
+          "Content-Type": "application/json",
+          "x-access-token":localStorage.getItem("token")
+          },
       })
        .then((res)=>{
             const temp = [];
@@ -78,6 +86,10 @@ function TimetablePage() {
                 data: obj,
                 url: `${base_backend_url}/timetable/add-timetable`,
                 withCredentials:true,
+                headers: {
+                  "Content-Type": "application/json",
+                  "x-access-token":localStorage.getItem("token")
+                  },
               })
               .then((response)=>{
 

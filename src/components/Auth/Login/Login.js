@@ -19,13 +19,16 @@ function Login() {
               url:`${base_backend_url}/auth/login`,
               withCredentials:true,
               headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+               "x-access-token":localStorage.getItem("token")
                 },
             })
             .then((res)=>{
               console.log(res.cookie);
+              console.log(res.token);
               console.log(res);
                 if(res.status===200){
+                    localStorage.setItem("token",res.data.token)
                     navigate('/home');
                 }
                 
@@ -41,7 +44,8 @@ function Login() {
           url:`${base_backend_url}/auth/login`,
           withCredentials:true, 
           headers: {
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+            "x-access-token":localStorage.getItem("token")
             },
         }).then((res)=>{
           if(res.status === 200)
