@@ -32,9 +32,9 @@ function AddSyllabus() {
               if(res.status === 200){
                   navigate('/syllabus/showSyllabus');
               }
-              else{
-                  navigate('/')
-              }
+            //   else{
+            //       navigate('/')
+            //   }
           })
             .catch((err)=>{
                 console.log("error adding syllabus",err);

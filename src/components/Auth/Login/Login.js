@@ -62,7 +62,7 @@ function Login() {
           <div className='Login'>
                 <div className='LoginOuterDiv'>
                 <h1 className='LoginHeading'>Log in</h1>
-                <form className='syllabus-form' onSubmit={(e)=> userLogin(e)} className="LoginFormDiv">
+                <form onSubmit={(e)=> userLogin(e)} className="LoginFormDiv">
                         <input type="email" 
                               required placeholder='Email' 
                               name="Email" className='LoginFormInput'

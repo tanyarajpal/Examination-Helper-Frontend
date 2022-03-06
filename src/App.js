@@ -16,21 +16,26 @@ import {base_backend_url} from './configuration'
 function App() {
   const navigate = useNavigate();
   const userLogout = async ()=>{
-    await axios({
-      method:'get',
-      // url:"http://localhost:4000/logout",
-      url:`${base_backend_url}/auth/logout`,
-      withCredentials:true,
-      headers: {
-        "Content-Type": "application/json",
-        "x-access-token":localStorage.getItem("token")
-        },
-    }).then((response)=>{
-      console.log("user logged out successfully",response);
-       navigate('/');
-    }).catch((err)=>{
-      console.log("error logging out");
-    })
+    localStorage.removeItem("token")
+      // .then((response)=>{
+      //   console.log("user logged out successfully",response);
+         navigate('/')
+      //    );
+    // await axios({
+    //   method:'get',
+    //   // url:"http://localhost:4000/logout",
+    //   url:`${base_backend_url}/auth/logout`,
+    //   withCredentials:true,
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //     "x-access-token":localStorage.getItem("token")
+    //     },
+    // }).then((response)=>{
+    //   console.log("user logged out successfully",response);
+    //    navigate('/');
+    // }).catch((err)=>{
+    //   console.log("error logging out");
+    // })
   }
   return (
     <div className="App">
