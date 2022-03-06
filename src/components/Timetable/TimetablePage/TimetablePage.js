@@ -29,7 +29,7 @@ function TimetablePage() {
             method: "post",
             data: data,
             url: `${base_backend_url}/timetable/get-timetable`,
-            //withCredentials:true,
+            withCredentials:true,
           })
           .then((response)=>{
                 // console.log(response.data.data);
@@ -46,7 +46,7 @@ function TimetablePage() {
       axios({
          method:"delete",
          url:`${base_backend_url}/timetable/delete-timetable/${outerId}/${id}`,
-         //withCredentials:true,
+         withCredentials:true,
       })
        .then((res)=>{
             const temp = [];
@@ -77,7 +77,7 @@ function TimetablePage() {
                 method: "post",
                 data: obj,
                 url: `${base_backend_url}/timetable/add-timetable`,
-                //withCredentials:true,
+                withCredentials:true,
               })
               .then((response)=>{
 

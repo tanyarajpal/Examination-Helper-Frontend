@@ -17,7 +17,7 @@ function Login() {
               method:'post',
               data:details,
               url:`${base_backend_url}/auth/login`,
-              // withCredentials:true,
+              withCredentials:true,
               headers: {
                 "Content-Type": "application/json"
                 },
@@ -36,7 +36,7 @@ function Login() {
         axios({
           method:'get',
           url:`${base_backend_url}/auth/login`,
-          // withCredentials:true, 
+          withCredentials:true, 
           headers: {
             "Content-Type": "application/json"
             },
