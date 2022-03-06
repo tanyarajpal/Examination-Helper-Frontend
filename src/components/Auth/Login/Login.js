@@ -23,10 +23,11 @@ function Login() {
                 },
             })
             .then((res)=>{
+              console.log(res.cookie);
                 if(res.status===200){
                     navigate('/home');
                 }
-                console.log(res.cookie);
+                
              })
              .catch((err)=>{
                   console.log("error logging in",err);
