@@ -130,7 +130,7 @@ function TimetablePage() {
     </div>
     <div className='timetableOuterDiv'>
     <h1 className='timetableHeading'>Timetable</h1>
-    <form className='syllabus-form' onSubmit={showTimetable}  className="timetableFormDiv">
+    <form  onSubmit={showTimetable}  className="timetableFormDiv">
         <input type="number" min="1" max="8" required placeholder='semester' name="Semester" className='timetableFormInput' onChange={updateData}/><br/>
         <input list="branches" required placeholder='select branch' name="Branch" className='timetableFormInput' onChange={updateData}/>
                 <datalist id="branches">
