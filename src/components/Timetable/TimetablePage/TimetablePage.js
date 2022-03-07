@@ -159,7 +159,7 @@ function TimetablePage() {
               return (
                  <>  
                     {
-                        TimeTable.map(({_id,SubjectCode,SubjectName,Date,Time})=>{
+                      TimeTable.map(({_id,SubjectCode,SubjectName,Date,Time})=>{
                             return(
                                 <tr className='syllabusList' >
                                    <td> {SubjectCode}</td>
