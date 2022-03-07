@@ -53,7 +53,8 @@ function TimetablePage() {
          withCredentials:true,
          headers: {
           "Content-Type": "application/json",
-          "x-access-token":localStorage.getItem("token")
+          "x-access-token":localStorage.getItem("token"),
+          "Access-Control-Allow-Origin": "*"
           },
       })
        .then((res)=>{
