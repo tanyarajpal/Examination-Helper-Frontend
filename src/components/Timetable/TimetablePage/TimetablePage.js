@@ -167,7 +167,7 @@ function TimetablePage() {
                                     <td>{Date}</td>
                                     <td>{Time}</td>
                                     {/* <td><button>Edit</button></td> */}
-                                    <td><button onClick={(e) => deleteSubjectSchedule(e, _id,outerId)} className="deleteTimetableButton">Delete</button></td>
+                                    {/* <td><button onClick={(e) => deleteSubjectSchedule(e, _id,outerId)} className="deleteTimetableButton">Delete</button></td> */}
                                 </tr>
                             )
                         })
